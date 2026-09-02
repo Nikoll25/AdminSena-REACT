@@ -1,0 +1,199 @@
+.navbar {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 30px;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    gap: 5px;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+
+/* BOTONES DEL NAVBAR */
+
+.nav-button {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 10px 12px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border-radius: 6px;
+}
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.dropdown-menu {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 210px;
+
+    margin: 0;
+    padding: 5px 0;
+
+    list-style: none;
+
+    background-color: white;
+
+    border-radius: 6px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+}
+
+
+/* BOTONES DEL DROPDOWN */
+
+.dropdown-menu button {
+    display: block;
+
+    width: 100%;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    background-color: white;
+
+    color: #333;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+    background-color: #f1f8f4;
+
+    color: #198754;
+}
+
+
+/* =========================
+   PARTE DERECHA
+========================= */
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    width: 160px;
+
+    height: 34px;
+
+    padding: 0 14px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 20px 0 0 20px;
+}
+
+.search-form button {
+    width: 40px;
+
+    height: 34px;
+
+    border: none;
+
+    background-color: white;
+
+    color: #198754;
+
+    border-radius: 0 20px 20px 0;
+
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-button {
+    padding: 8px 14px;
+
+    border: none;
+
+    background-color: white;
+
+    color: #198754;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.login-button:hover {
+    background-color: #f1f1f1;
+}

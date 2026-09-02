@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+
+    background-color: #198754;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+
+    min-height: 60px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.header-brand {
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.header-logo {
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+
+    margin-right: 10px;
+}
+
+.header-brand:hover {
+    color: white;
+}
