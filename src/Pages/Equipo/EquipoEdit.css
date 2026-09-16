@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.equipment-edit-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #f5f7f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.equipment-edit-card {
+    width: 100%;
+    max-width: 680px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07),
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.equipment-edit-header {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 28px 32px;
+    background: linear-gradient(135deg, #198754, #239b64);
+    color: white;
+}
+
+.equipment-edit-icon {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    font-size: 22px;
+}
+
+.equipment-edit-header h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.equipment-edit-header p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.equipment-edit-body {
+    padding: 34px;
+}
+
+.equipment-edit-title {
+    margin-bottom: 27px;
+}
+
+.equipment-edit-title h2 {
+    margin: 0;
+    color: #1f2933;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.equipment-edit-title p {
+    margin: 5px 0 0;
+    color: #8a939b;
+    font-size: 13px;
+}
+
+.equipment-edit-group {
+    margin-bottom: 23px;
+}
+
+.equipment-edit-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 9px;
+    color: #29323a;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.equipment-edit-group label svg {
+    color: #198754;
+    font-size: 13px;
+}
+
+.equipment-edit-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #dfe5e1;
+    border-radius: 10px;
+    background-color: #fbfcfb;
+    color: #29323a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.equipment-edit-group input::placeholder {
+    color: #a1a9a5;
+}
+
+.equipment-edit-group input:focus {
+    border-color: #198754;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.08);
+}
+
+.equipment-edit-group small {
+    display: block;
+    margin-top: 6px;
+    color: #9aa19e;
+    font-size: 11px;
+}
+
+.equipment-edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid #edf0ee;
+}
+
+.equipment-edit-cancel,
+.equipment-edit-save {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.equipment-edit-cancel {
+    border: 1px solid #d6dbd8;
+    background-color: white;
+    color: #69737a;
+}
+
+.equipment-edit-cancel:hover {
+    background-color: #f3f6f4;
+    border-color: #b9c2bd;
+    color: #3f4944;
+}
+
+.equipment-edit-save {
+    border: 1px solid #198754;
+    background-color: #198754;
+    color: white;
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.15);
+}
+
+.equipment-edit-save:hover {
+    background-color: #157347;
+    border-color: #157347;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(25, 135, 84, 0.20);
+}
+.equipment-photo-upload {
+    width: 100%;
+    min-height: 190px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px dashed #cbd8d0;
+    border-radius: 12px;
+    background-color: #fbfcfb;
+    transition: all 0.2s ease;
+}
+
+.equipment-photo-upload:hover {
+    border-color: #198754;
+    background-color: #f8fbf9;
+}
+
+.equipment-photo-upload input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.equipment-photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #8a939b;
+    font-size: 13px;
+}
+
+.equipment-photo-placeholder svg {
+    color: #198754;
+    font-size: 30px;
+}
+
+.equipment-photo-preview {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}

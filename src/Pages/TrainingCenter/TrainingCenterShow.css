@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.training-show-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 50px 20px;
+
+    background-color: #f5f7f5;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.training-show-card {
+    width: 100%;
+    max-width: 680px;
+
+    background-color: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07),
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.training-show-header {
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 28px 32px;
+
+    background: linear-gradient(
+        135deg,
+        #198754,
+        #239b64
+    );
+
+    color: white;
+}
+
+.training-show-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 16px;
+
+    background-color: rgba(255, 255, 255, 0.16);
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    font-size: 22px;
+}
+
+.training-show-header h1 {
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    letter-spacing: -0.4px;
+}
+
+.training-show-header p {
+    margin: 5px 0 0;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* =========================================
+   CUERPO
+========================================= */
+
+.training-show-body {
+    padding: 34px;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.training-show-title {
+    margin-bottom: 25px;
+}
+
+.training-show-title h2 {
+    margin: 0;
+
+    color: #1f2933;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    letter-spacing: -0.2px;
+}
+
+.training-show-title p {
+    margin: 5px 0 0;
+
+    color: #8a939b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   INFORMACIÓN
+========================================= */
+
+.training-info {
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+
+    margin-bottom: 14px;
+
+    padding: 18px 20px;
+
+    border: 1px solid #edf0ee;
+
+    border-radius: 14px;
+
+    background-color: #fbfcfb;
+
+    transition: all 0.2s ease;
+}
+
+.training-info:hover {
+    transform: translateY(-2px);
+
+    border-color: #cce4d6;
+
+    background-color: #f8fbf9;
+
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.07);
+}
+
+
+/* ICONO */
+
+.training-info-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background-color: #e9f6ef;
+
+    color: #198754;
+
+    font-size: 16px;
+}
+
+
+/* TEXTO */
+
+.training-info-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.training-info-content span {
+    color: #8a939b;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+.training-info-content strong {
+    color: #29323a;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   BOTÓN VOLVER
+========================================= */
+
+.training-show-buttons {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 30px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #edf0ee;
+}
+
+.training-show-back {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px 19px;
+
+    border: 1px solid #d6dbd8;
+
+    border-radius: 9px;
+
+    background-color: white;
+
+    color: #69737a;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.training-show-back:hover {
+    background-color: #f3f6f4;
+
+    border-color: #b9c2bd;
+
+    color: #3f4944;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .training-show-container {
+        padding: 30px 15px;
+    }
+
+    .training-show-header {
+        padding: 23px;
+    }
+
+    .training-show-header h1 {
+        font-size: 21px;
+    }
+
+    .training-show-body {
+        padding: 25px 20px;
+    }
+
+    .training-show-buttons {
+        justify-content: stretch;
+    }
+
+    .training-show-back {
+        width: 100%;
+    }
+}

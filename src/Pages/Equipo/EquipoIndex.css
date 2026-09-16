@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.equipment-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 35px 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.equipment-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 24px;
+
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #e1e5e2;
+}
+
+.equipment-header h1 {
+    margin: 0;
+
+    color: #212529;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.equipment-header p {
+    margin: 5px 0 0;
+
+    color: #7b8580;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   BOTÓN AGREGAR
+========================================= */
+
+.equipment-add-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 20px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #198754;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.18);
+
+    transition: all 0.2s ease;
+}
+
+.equipment-add-button:hover {
+    background-color: #157347;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 14px rgba(25, 135, 84, 0.23);
+}
+
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.equipment-card {
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06),
+        0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+
+/* =========================================
+   TABLA
+========================================= */
+
+.equipment-table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.equipment-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 0;
+}
+
+
+/* CABECERA */
+
+.equipment-table thead {
+    background-color: #198754;
+
+    color: white;
+}
+
+.equipment-table th {
+    padding: 15px 16px;
+
+    text-align: left;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.equipment-table th:first-child {
+    padding-left: 24px;
+}
+
+.equipment-actions-header {
+    text-align: center !important;
+
+    padding-right: 24px !important;
+}
+
+
+/* =========================================
+   FILAS
+========================================= */
+
+.equipment-table tbody tr {
+    border-bottom: 1px solid #eeeeee;
+
+    transition: background-color 0.2s ease;
+}
+
+.equipment-table tbody tr:hover {
+    background-color: #f8faf9;
+}
+
+.equipment-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   CELDAS
+========================================= */
+
+.equipment-table td {
+    padding: 17px 16px;
+
+    font-size: 13px;
+}
+
+
+/* ID */
+
+.equipment-id {
+    padding-left: 24px !important;
+
+    color: #7b8580;
+
+    font-weight: 600;
+}
+
+
+/* NÚMERO */
+
+.equipment-number {
+    color: #29323a;
+
+    font-weight: 600;
+}
+
+
+/* MARCA */
+
+.equipment-brand {
+    color: #6c757d;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   ACCIONES
+========================================= */
+
+.equipment-actions {
+    text-align: center;
+
+    padding-right: 24px !important;
+}
+
+.equipment-action-container {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.equipment-action {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.2s ease;
+}
+
+
+/* VER */
+
+.equipment-view {
+    border: 1px solid #198754;
+
+    color: #198754;
+}
+
+.equipment-view:hover {
+    background-color: #198754;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* EDITAR */
+
+.equipment-edit {
+    border: 1px solid #0dcaf0;
+
+    color: #0aa5c7;
+}
+
+.equipment-edit:hover {
+    background-color: #0dcaf0;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* ELIMINAR */
+
+.equipment-delete {
+    border: 1px solid #dc3545;
+
+    color: #dc3545;
+}
+
+.equipment-delete:hover {
+    background-color: #dc3545;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+/* FOTO DEL EQUIPO */
+
+.equipment-photo {
+    width: 80px;
+}
+
+.equipment-photo img {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #e1e5e2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}

@@ -1,5 +1,21 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import {
+    FaHome,
+    FaCog,
+    FaGraduationCap,
+    FaBriefcase,
+    FaSearch,
+    FaUser,
+    FaChevronDown,
+    FaBuilding,
+    FaLaptop,
+    FaChalkboardTeacher,
+    FaBook,
+    FaUsers,
+    FaLink,
+} from "react-icons/fa";
+
 import "./Navbar.css";
 
 function Navbar() {
@@ -8,6 +24,7 @@ function Navbar() {
 
     const [administracionOpen, setAdministracionOpen] = useState(false);
     const [academicoOpen, setAcademicoOpen] = useState(false);
+
     return (
         <nav className="navbar">
 
@@ -20,7 +37,8 @@ function Navbar() {
                         onClick={() => navigate("/inicio")}
                         className="nav-button"
                     >
-                        Inicio
+                        <FaHome />
+                        <span>Inicio</span>
                     </button>
                 </li>
 
@@ -34,39 +52,49 @@ function Navbar() {
                         }
                         className="nav-button"
                     >
-                        Administración
-                        <span>⌄</span>
+                        <FaCog />
+                        <span>Administración</span>
+                        <FaChevronDown
+                            className={
+                                administracionOpen
+                                    ? "arrow rotate"
+                                    : "arrow"
+                            }
+                        />
                     </button>
-
-
                     {administracionOpen && (
                         <ul className="dropdown-menu">
 
                             <li>
                                 <button
-                                    onClick={() => navigate("/area/list")}
+                                    onClick={() =>
+                                        navigate("/area/list")
+                                    }
                                 >
-                                    Áreas
+                                    <FaBuilding />
+                                    <span>Áreas</span>
                                 </button>
                             </li>
 
                             <li>
                                 <button
                                     onClick={() =>
-                                    navigate("/trainingcenter/list")
+                                        navigate("/trainingcenter/list")
                                     }
                                 >
-                                    Centros de formación
+                                    <FaBuilding />
+                                    <span>Centros de formación</span>
                                 </button>
                             </li>
 
                             <li>
                                 <button
                                     onClick={() =>
-                                        navigate("/computer/list")
+                                        navigate("/equipo/list")
                                     }
                                 >
-                                    Computadores
+                                    <FaLaptop />
+                                    <span>Equipos</span>
                                 </button>
                             </li>
 
@@ -85,8 +113,15 @@ function Navbar() {
                         }
                         className="nav-button"
                     >
-                        Académico
-                        <span>⌄</span>
+                        <FaGraduationCap />
+                        <span>Académico</span>
+                        <FaChevronDown
+                            className={
+                                academicoOpen
+                                    ? "arrow rotate"
+                                    : "arrow"
+                            }
+                        />
                     </button>
 
 
@@ -99,7 +134,8 @@ function Navbar() {
                                         navigate("/teacher/list")
                                     }
                                 >
-                                    Instructores
+                                    <FaChalkboardTeacher />
+                                    <span>Instructores</span>
                                 </button>
                             </li>
 
@@ -109,7 +145,8 @@ function Navbar() {
                                         navigate("/course/list")
                                     }
                                 >
-                                    Cursos
+                                    <FaBook />
+                                    <span>Cursos</span>
                                 </button>
                             </li>
 
@@ -119,7 +156,8 @@ function Navbar() {
                                         navigate("/apprentice/list")
                                     }
                                 >
-                                    Aprendices
+                                    <FaUsers />
+                                    <span>Aprendices</span>
                                 </button>
                             </li>
 
@@ -129,7 +167,8 @@ function Navbar() {
                                         navigate("/courseteacher/create")
                                     }
                                 >
-                                    Asignaciones
+                                    <FaLink />
+                                    <span>Asignaciones</span>
                                 </button>
                             </li>
 
@@ -145,7 +184,8 @@ function Navbar() {
                         onClick={() => navigate("/offer/list")}
                         className="nav-button"
                     >
-                        Ofertas
+                        <FaBriefcase />
+                        <span>Ofertas</span>
                     </button>
                 </li>
 
@@ -155,39 +195,31 @@ function Navbar() {
             {/* PARTE DERECHA */}
             <div className="navbar-right">
 
-                {/* BUSCADOR */}
-                <form
-                    className="search-form"
-                    onSubmit={(e) => {
-                        e.preventDefault();
-                    }}
-                >
-
+                <form className="search-form">
                     <input
                         type="search"
                         placeholder="Buscar..."
                     />
 
-                    <button type="submit">
-                        🔍
+                    <button type="button">
+                        <FaSearch />
                     </button>
-
                 </form>
 
 
                 {/* INICIAR SESIÓN */}
                 <button
-                    onClick={() => irA("/login")}
+                    onClick={() => navigate("/login")}
                     className="login-button"
                 >
-                    👤 Iniciar sesión
+                    <FaUser />
+                    <span>Iniciar sesión</span>
                 </button>
 
             </div>
 
         </nav>
     );
-    
 }
 
 export default Navbar;

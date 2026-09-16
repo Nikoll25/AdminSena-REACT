@@ -1,0 +1,317 @@
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.area-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.area-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #dee2e6;
+}
+
+.area-header h1 {
+    margin: 0;
+
+    color: #212529;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.area-header p {
+    margin: 3px 0 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.area-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #198754;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+    transition: 0.2s;
+}
+
+.area-add-button:hover {
+    background-color: #157347;
+}
+
+
+/* =========================
+   TARJETA DE LA TABLA
+========================= */
+
+.area-card {
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   CONTENEDOR DE TABLA
+========================= */
+
+.area-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================
+   TABLA
+========================= */
+
+.area-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 0;
+}
+
+
+/* =========================
+   CABECERA DE TABLA
+========================= */
+
+.area-table thead {
+    background-color: #198754;
+    color: white;
+}
+
+.area-table th {
+    padding: 15px 16px;
+
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.area-table th:first-child {
+    padding-left: 24px;
+}
+
+.area-actions-header {
+    text-align: center !important;
+    padding-right: 24px !important;
+}
+
+
+/* =========================
+   FILAS
+========================= */
+
+.area-table tbody tr {
+    border-bottom: 1px solid #eeeeee;
+
+    transition: background-color 0.2s;
+}
+
+.area-table tbody tr:hover {
+    background-color: #f8faf9;
+}
+
+.area-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================
+   CELDAS
+========================= */
+
+.area-table td {
+    padding: 16px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ID
+========================= */
+
+.area-id {
+    padding-left: 24px !important;
+
+    color: #6c757d;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   NOMBRE
+========================= */
+
+.area-name {
+    color: #212529;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   ACCIONES
+========================= */
+
+.area-actions {
+    text-align: center;
+
+    padding-right: 24px !important;
+}
+
+.area-action-container {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+/* =========================
+   BOTONES DE ACCIÓN
+========================= */
+
+.area-action {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+
+/* =========================
+   VER
+========================= */
+
+.area-view {
+    border: 1px solid #198754;
+
+    color: #198754;
+}
+
+.area-view:hover {
+    background-color: #198754;
+    color: white;
+}
+
+
+/* =========================
+   EDITAR
+========================= */
+
+.area-edit {
+    border: 1px solid #0dcaf0;
+
+    color: #0dcaf0;
+}
+
+.area-edit:hover {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+
+/* =========================
+   ELIMINAR
+========================= */
+
+.area-delete {
+    border: 1px solid #dc3545;
+
+    color: #dc3545;
+}
+
+.area-delete:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+/* =========================
+   PANTALLAS PEQUEÑAS
+========================= */
+
+@media (max-width: 700px) {
+
+    .area-container {
+        width: 95%;
+    }
+
+    .area-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .area-add-button {
+        width: 100%;
+    }
+
+}
