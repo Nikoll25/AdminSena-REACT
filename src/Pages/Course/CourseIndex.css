@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.course-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    background-color: #f5f7f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.course-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.course-header h1 {
+    margin: 0;
+    color: #202a30;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.course-header p {
+    margin: 5px 0 0;
+    color: #8a939b;
+    font-size: 13px;
+}
+
+/* =========================
+   BOTÓN AGREGAR
+========================= */
+
+.course-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 9px;
+    background-color: #198754;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.18);
+    transition: all 0.2s ease;
+}
+
+.course-add-button:hover {
+    background-color: #157347;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(25, 135, 84, 0.22);
+}
+
+.course-add-button svg {
+    font-size: 14px;
+}
+
+/* =========================
+   TARJETA
+========================= */
+
+.course-card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05),
+        0 2px 7px rgba(0, 0, 0, 0.03);
+}
+
+/* =========================
+   TABLA
+========================= */
+
+.course-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+/* =========================
+   CABECERA
+========================= */
+
+.course-table thead {
+    background-color: #198754;
+}
+
+.course-table th {
+    padding: 15px 16px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.course-table th:first-child {
+    padding-left: 20px;
+}
+
+.course-actions-header {
+    text-align: center !important;
+}
+
+/* =========================
+   FILAS
+========================= */
+
+.course-table tbody tr {
+    border-bottom: 1px solid #edf0ee;
+    transition: background-color 0.2s ease;
+}
+
+.course-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.course-table tbody tr:hover {
+    background-color: #f8fbf9;
+}
+
+.course-table td {
+    padding: 14px 16px;
+    color: #4d565c;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.course-table td:first-child {
+    padding-left: 20px;
+}
+
+/* =========================
+   ID
+========================= */
+
+.course-id {
+    color: #198754 !important;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* =========================
+   NÚMERO
+========================= */
+
+.course-number {
+    color: #29323a !important;
+    font-weight: 600;
+}
+
+.course-number-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-number-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: #e9f6ef;
+    color: #198754;
+    font-size: 13px;
+}
+
+.course-number-content span {
+    white-space: nowrap;
+}
+
+/* =========================
+   DÍA
+========================= */
+
+.course-day-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-day-content svg {
+    color: #198754;
+    font-size: 12px;
+}
+
+.course-day-content span {
+    white-space: nowrap;
+}
+
+/* =========================
+   ÁREA
+========================= */
+
+.course-area-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-area-content svg {
+    color: #198754;
+    font-size: 12px;
+}
+
+.course-area-content span {
+    color: #3f4944;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* =========================
+   CENTRO
+========================= */
+
+.course-center-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 270px;
+}
+
+.course-center-content svg {
+    flex-shrink: 0;
+    color: #198754;
+    font-size: 12px;
+}
+
+.course-center-content span {
+    line-height: 1.4;
+}
+
+/* =========================
+   ACCIONES
+========================= */
+
+.course-actions {
+    text-align: center;
+}
+
+.course-action-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.course-action {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* VER */
+
+.course-view {
+    border: 1px solid #198754;
+    color: #198754;
+}
+
+.course-view:hover {
+    background-color: #198754;
+    color: white;
+}
+
+/* EDITAR */
+
+.course-edit {
+    border: 1px solid #0dcaf0;
+    color: #0aa2c0;
+}
+
+.course-edit:hover {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+/* ELIMINAR */
+
+.course-delete {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.course-delete:hover {
+    background-color: #dc3545;
+    color: white;
+}

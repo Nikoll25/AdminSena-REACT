@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.apprentice-show-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #f5f7f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.apprentice-show-card {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07),
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.apprentice-show-header {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 28px 32px;
+    background: linear-gradient(135deg, #198754, #239b64);
+    color: white;
+}
+
+.apprentice-show-icon {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    font-size: 22px;
+}
+
+.apprentice-show-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.apprentice-show-header p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.apprentice-show-body {
+    padding: 34px;
+}
+
+/* Perfil */
+
+.apprentice-profile {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 20px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    background-color: #f8faf8;
+    border: 1px solid #edf0ee;
+}
+
+.apprentice-profile-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background-color: #e8f5ee;
+    color: #198754;
+    font-size: 22px;
+}
+
+.apprentice-profile-info h2 {
+    margin: 0;
+    color: #202a31;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.apprentice-profile-id {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    color: #8a939b;
+    font-size: 12px;
+}
+
+/* Título */
+
+.apprentice-section-title {
+    margin-bottom: 20px;
+}
+
+.apprentice-section-title h3 {
+    margin: 0;
+    color: #1f2933;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.apprentice-section-title p {
+    margin: 5px 0 0;
+    color: #8a939b;
+    font-size: 13px;
+}
+
+/* Información */
+
+.apprentice-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.apprentice-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 78px;
+    padding: 16px 18px;
+    border: 1px solid #edf0ee;
+    border-radius: 14px;
+    background-color: #fbfcfb;
+    transition: all 0.2s ease;
+}
+
+.apprentice-info:hover {
+    transform: translateY(-2px);
+    border-color: #cce4d6;
+    background-color: #f8fbf9;
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.07);
+}
+
+.apprentice-info-full {
+    grid-column: 1 / 3;
+}
+
+.apprentice-info-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background-color: #e9f6ef;
+    color: #198754;
+    font-size: 16px;
+}
+
+.apprentice-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.apprentice-info-content span {
+    color: #8a939b;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.apprentice-info-content strong {
+    color: #29323a;
+    font-size: 14px;
+    font-weight: 600;
+    overflow-wrap: break-word;
+}
+
+/* Botón */
+
+.apprentice-show-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid #edf0ee;
+}
+
+.apprentice-show-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 19px;
+    border: 1px solid #d6dbd8;
+    border-radius: 9px;
+    background-color: white;
+    color: #69737a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.apprentice-show-back:hover {
+    background-color: #f3f6f4;
+    border-color: #b9c2bd;
+    color: #3f4944;
+}

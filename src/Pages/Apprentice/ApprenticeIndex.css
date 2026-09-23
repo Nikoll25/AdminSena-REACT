@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.apprentice-index-container {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 45px 30px;
+
+    background-color: #f5f7f5;
+
+    font-family: 'Poppins', sans-serif;
+
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.apprentice-index-header {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.apprentice-index-header h1 {
+    margin: 0;
+
+    color: #1f2933;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.apprentice-index-header p {
+    margin: 6px 0 0;
+
+    color: #8a939b;
+
+    font-size: 13px;
+}
+
+/* ADD BUTTON */
+
+.apprentice-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #198754;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(25, 135, 84, 0.18);
+
+    transition: all 0.2s ease;
+}
+
+.apprentice-add-button:hover {
+    background-color: #157347;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 16px rgba(25, 135, 84, 0.22);
+}
+
+.apprentice-add-button svg {
+    font-size: 14px;
+}
+
+/* TABLE CARD */
+
+.apprentice-table-card {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06),
+        0 2px 7px rgba(0, 0, 0, 0.03);
+}
+
+.apprentice-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+/* TABLE */
+
+.apprentice-table {
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: collapse;
+}
+
+.apprentice-table thead {
+    background-color: #198754;
+}
+
+.apprentice-table th {
+    padding: 15px 16px;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+    white-space: nowrap;
+}
+
+.apprentice-table td {
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #edf0ee;
+
+    color: #4b5563;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+}
+
+.apprentice-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.apprentice-table tbody tr:hover {
+    background-color: #f8fbf9;
+}
+
+.apprentice-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ID */
+
+.apprentice-id {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 30px;
+    height: 30px;
+
+    padding: 0 8px;
+
+    border-radius: 8px;
+
+    background-color: #e9f6ef;
+
+    color: #198754;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* NAME */
+
+.apprentice-name {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 180px;
+}
+
+.apprentice-name-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background-color: #e9f6ef;
+
+    color: #198754;
+
+    font-size: 13px;
+}
+
+.apprentice-name span {
+    color: #29323a;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+/* EMAIL */
+
+.apprentice-email,
+.apprentice-phone,
+.apprentice-data {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+}
+
+.apprentice-email {
+    color: #68727a;
+}
+
+.apprentice-phone {
+    color: #68727a;
+}
+
+.apprentice-data {
+    color: #3f4944;
+    font-weight: 500;
+}
+
+.apprentice-email svg,
+.apprentice-phone svg,
+.apprentice-data svg {
+    color: #198754;
+
+    font-size: 12px;
+}
+
+/* ACTIONS */
+
+.apprentice-actions-header {
+    text-align: center !important;
+}
+
+.apprentice-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+}
+
+.apprentice-action {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: white;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.apprentice-view {
+    border: 1px solid #198754;
+    color: #198754;
+}
+
+.apprentice-view:hover {
+    background-color: #198754;
+    color: white;
+}
+
+.apprentice-edit {
+    border: 1px solid #0dcaf0;
+    color: #0aa2c0;
+}
+
+.apprentice-edit:hover {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.apprentice-delete {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.apprentice-delete:hover {
+    background-color: #dc3545;
+    color: white;
+}

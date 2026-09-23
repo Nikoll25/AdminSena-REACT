@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.teacher-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    background-color: #f5f7f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ENCABEZADO */
+
+.teacher-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.teacher-header h1 {
+    margin: 0;
+    color: #202a30;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.teacher-header p {
+    margin: 5px 0 0;
+    color: #8a939b;
+    font-size: 13px;
+}
+
+/* BOTÓN AGREGAR */
+
+.teacher-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 9px;
+    background-color: #198754;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.18);
+    transition: all 0.2s ease;
+}
+
+.teacher-add-button:hover {
+    background-color: #157347;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(25, 135, 84, 0.22);
+}
+
+.teacher-add-button svg {
+    font-size: 14px;
+}
+
+/* TARJETA */
+
+.teacher-card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05),
+        0 2px 7px rgba(0, 0, 0, 0.03);
+}
+
+/* TABLA */
+
+.teacher-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.teacher-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+/* CABECERA */
+
+.teacher-table thead {
+    background-color: #198754;
+}
+
+.teacher-table th {
+    padding: 15px 16px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.teacher-table th:first-child {
+    padding-left: 20px;
+}
+
+.teacher-actions-header {
+    text-align: center !important;
+}
+
+/* FILAS */
+
+.teacher-table tbody tr {
+    border-bottom: 1px solid #edf0ee;
+    transition: background-color 0.2s ease;
+}
+
+.teacher-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.teacher-table tbody tr:hover {
+    background-color: #f8fbf9;
+}
+
+.teacher-table td {
+    padding: 14px 16px;
+    color: #4d565c;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.teacher-table td:first-child {
+    padding-left: 20px;
+}
+
+/* ID */
+
+.teacher-id {
+    color: #198754 !important;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* NOMBRE */
+
+.teacher-name {
+    color: #29323a !important;
+    font-weight: 600;
+}
+
+.teacher-name-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.teacher-name-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: #e9f6ef;
+    color: #198754;
+    font-size: 13px;
+}
+
+.teacher-name-content span {
+    white-space: nowrap;
+}
+
+/* CORREO */
+
+.teacher-email-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #657078;
+}
+
+.teacher-email-content svg {
+    flex-shrink: 0;
+    color: #198754;
+    font-size: 12px;
+}
+
+.teacher-email-content span {
+    white-space: nowrap;
+}
+
+/* ÁREA */
+
+.teacher-area {
+    color: #3f4944 !important;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* CENTRO */
+
+.teacher-center-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 250px;
+}
+
+.teacher-center-content svg {
+    flex-shrink: 0;
+    color: #198754;
+    font-size: 12px;
+}
+
+.teacher-center-content span {
+    line-height: 1.4;
+}
+
+/* ACCIONES */
+
+.teacher-actions {
+    text-align: center;
+}
+
+.teacher-action-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.teacher-action {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* VER */
+
+.teacher-view {
+    border: 1px solid #198754;
+    color: #198754;
+}
+
+.teacher-view:hover {
+    background-color: #198754;
+    color: white;
+}
+
+/* EDITAR */
+
+.teacher-edit {
+    border: 1px solid #0dcaf0;
+    color: #0aa2c0;
+}
+
+.teacher-edit:hover {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+/* ELIMINAR */
+
+.teacher-delete {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.teacher-delete:hover {
+    background-color: #dc3545;
+    color: white;
+}

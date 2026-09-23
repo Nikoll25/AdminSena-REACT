@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.offer-index-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: calc(100vh - 60px);
+    padding: 40px 30px;
+    background-color: #f5f7f5;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* Encabezado */
+
+.offer-index-header {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto 25px;
+    padding-bottom: 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #dfe5e1;
+    box-sizing: border-box;
+}
+
+.offer-index-header > div:first-child {
+    min-width: 0;
+}
+
+.offer-index-header h1 {
+    margin: 0;
+
+    color: #202a31;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.offer-index-header p {
+    margin: 6px 0 0;
+
+    color: #8a939b;
+
+    font-size: 13px;
+}
+
+
+/* Botón agregar */
+
+.offer-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    flex-shrink: 0;
+
+    padding: 11px 20px;
+
+    border-radius: 999px;
+
+    background-color: #198754;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.18);
+
+    transition: all 0.2s ease;
+}
+
+.offer-add-button:hover {
+    background-color: #157347;
+    color: white;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 15px rgba(25, 135, 84, 0.23);
+}
+
+.offer-add-button svg {
+    font-size: 16px;
+}
+
+
+/* Tabla */
+
+.offer-table-card {
+    width: 100%;
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06),
+        0 2px 7px rgba(0, 0, 0, 0.03);
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* Contenedor del scroll */
+
+.offer-table-responsive {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* Barra de desplazamiento */
+
+.offer-table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.offer-table-responsive::-webkit-scrollbar-track {
+    background-color: #f1f3f1;
+}
+
+.offer-table-responsive::-webkit-scrollbar-thumb {
+    background-color: #b8c5bc;
+    border-radius: 10px;
+}
+
+.offer-table-responsive::-webkit-scrollbar-thumb:hover {
+    background-color: #198754;
+}
+
+
+/* Tabla */
+
+.offer-table {
+    width: 100%;
+
+    /*
+       La tabla puede ser más grande que la pantalla,
+       pero el scroll queda encerrado dentro de la tarjeta.
+    */
+    min-width: 1250px;
+
+    border-collapse: collapse;
+}
+
+
+/* Encabezado */
+
+.offer-table thead {
+    background-color: #198754;
+    color: white;
+}
+
+.offer-table th {
+    padding: 15px 14px;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.offer-table th:first-child {
+    padding-left: 22px;
+}
+
+.offer-table th:last-child {
+    padding-right: 22px;
+}
+
+
+/* Filas */
+
+.offer-table tbody tr {
+    border-bottom: 1px solid #edf0ee;
+
+    transition: background-color 0.2s ease;
+}
+
+.offer-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.offer-table tbody tr:hover {
+    background-color: #f8fbf9;
+}
+
+.offer-table td {
+    padding: 15px 14px;
+
+    color: #4b555c;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+}
+
+.offer-table td:first-child {
+    padding-left: 22px;
+}
+
+.offer-table td:last-child {
+    padding-right: 22px;
+}
+
+
+/* ID */
+
+.offer-id {
+    color: #7d878e !important;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* Nombre */
+
+.offer-name {
+    min-width: 190px;
+
+    color: #29323a !important;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* Descripción */
+
+.offer-description {
+    width: 190px;
+    max-width: 190px;
+
+    color: #8a939b !important;
+
+    line-height: 1.5;
+}
+
+
+/* Modalidad */
+
+.offer-modality {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 12px;
+
+    border-radius: 999px;
+
+    background-color: #e8f5ee;
+
+    border: 1px solid #cce4d6;
+
+    color: #198754;
+
+    white-space: nowrap;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.offer-modality.virtual {
+    background-color: #eef6f8;
+
+    border-color: #d4e8ed;
+
+    color: #287c8c;
+}
+
+
+/* Fechas */
+
+.offer-date {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+
+    color: #29323a;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.offer-date svg {
+    flex-shrink: 0;
+
+    color: #198754;
+
+    font-size: 13px;
+}
+
+.offer-end-date {
+    color: #6f797f;
+}
+
+.offer-end-date svg {
+    color: #8a939b;
+}
+
+
+/* Centrar contenido */
+
+.offer-center {
+    text-align: center !important;
+}
+
+
+/* Cupos */
+
+.offer-quota {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 42px;
+
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    background-color: #f5f7f5;
+
+    border: 1px solid #e1e6e3;
+
+    color: #29323a;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* Foto */
+
+.offer-photo {
+    width: 55px;
+    height: 55px;
+
+    display: block;
+
+    margin: auto;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 1px solid #e1e6e3;
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Área */
+
+.offer-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    min-width: 110px;
+
+    color: #29323a;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+.offer-area svg {
+    flex-shrink: 0;
+
+    color: #198754;
+
+    font-size: 13px;
+}
+
+
+/* Centro */
+
+.offer-center-name {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    min-width: 210px;
+
+    color: #69737a;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.offer-center-name svg {
+    flex-shrink: 0;
+
+    color: #8a939b;
+
+    font-size: 13px;
+}
+
+
+/* Acciones */
+
+.offer-actions {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    /*
+       Evita que los botones se separen o salgan
+       del espacio de su columna.
+    */
+    white-space: nowrap;
+}
+
+.offer-action {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    box-sizing: border-box;
+}
+
+.offer-action.view {
+    border: 1px solid #198754;
+
+    color: #198754;
+}
+
+.offer-action.view:hover {
+    background-color: #198754;
+
+    color: white;
+}
+
+.offer-action.edit {
+    border: 1px solid #20a4b8;
+
+    color: #20a4b8;
+}
+
+.offer-action.edit:hover {
+    background-color: #20a4b8;
+
+    color: white;
+}
+
+.offer-action.delete {
+    border: 1px solid #dc3545;
+
+    color: #dc3545;
+}
+
+.offer-action.delete:hover {
+    background-color: #dc3545;
+
+    color: white;
+}
