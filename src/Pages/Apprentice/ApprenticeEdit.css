@@ -1,65 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+
 .apprentice-edit-container {
     width: 100%;
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
     padding: 50px 20px;
+
     background-color: #f5f7f5;
+
     font-family: 'Poppins', sans-serif;
 }
+
+
+/* =========================================================
+   TARJETA PRINCIPAL
+   ========================================================= */
 
 .apprentice-edit-card {
     width: 100%;
     max-width: 850px;
+
     background-color: white;
+
     border-radius: 20px;
+
     overflow: hidden;
+
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.07),
         0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 .apprentice-edit-header {
     display: flex;
     align-items: center;
+
     gap: 17px;
+
     padding: 28px 32px;
+
     background: linear-gradient(135deg, #198754, #239b64);
+
     color: white;
 }
+
+
+/* Icono del encabezado */
 
 .apprentice-edit-header-icon {
     width: 54px;
     height: 54px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     flex-shrink: 0;
+
     border-radius: 16px;
+
     background-color: rgba(255, 255, 255, 0.16);
+
     border: 1px solid rgba(255, 255, 255, 0.20);
+
     font-size: 22px;
 }
 
+
+/* Título y descripción del encabezado */
+
 .apprentice-edit-header h1 {
     margin: 0;
+
     font-size: 24px;
+
     font-weight: 700;
+
     letter-spacing: -0.4px;
 }
 
 .apprentice-edit-header p {
     margin: 5px 0 0;
+
     font-size: 13px;
+
     color: rgba(255, 255, 255, 0.82);
 }
+
+
+/* =========================================================
+   CUERPO DEL FORMULARIO
+   ========================================================= */
 
 .apprentice-edit-body {
     padding: 34px;
 }
+
+
+/* Título y descripción del formulario */
 
 .apprentice-edit-title {
     margin-bottom: 28px;
@@ -67,135 +119,251 @@
 
 .apprentice-edit-title h2 {
     margin: 0;
+
     color: #1f2933;
+
     font-size: 19px;
+
     font-weight: 600;
 }
 
 .apprentice-edit-title p {
     margin: 5px 0 0;
+
     color: #8a939b;
+
     font-size: 13px;
 }
+
+
+/* =========================================================
+   CAMPOS DEL FORMULARIO
+   ========================================================= */
 
 .apprentice-edit-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 24px 20px;
 }
 
+
+/* Organización de cada campo */
+
 .apprentice-edit-group {
     display: flex;
+
     flex-direction: column;
 }
 
+
+/* Etiquetas de los campos */
+
 .apprentice-edit-group label {
     display: flex;
+
     align-items: center;
+
     gap: 8px;
+
     margin-bottom: 9px;
+
     color: #374151;
+
     font-size: 13px;
+
     font-weight: 600;
 }
 
+
+/* Iconos de las etiquetas */
+
 .apprentice-edit-group label svg {
     color: #198754;
+
     font-size: 13px;
 }
 
+
+/* =========================================================
+   INPUTS Y SELECTS
+   ========================================================= */
+
 .apprentice-edit-input {
     min-height: 50px;
+
     display: flex;
+
     align-items: center;
+
     padding: 0 14px;
+
     border: 1px solid #dfe5e1;
+
     border-radius: 11px;
+
     background-color: #fbfcfb;
+
     transition: all 0.2s ease;
 }
 
+
+/* Iconos dentro de los campos */
+
 .apprentice-edit-input > svg {
     flex-shrink: 0;
+
     margin-right: 11px;
+
     color: #198754;
+
     font-size: 14px;
 }
+
+
+/* Estilos generales de inputs y selects */
 
 .apprentice-edit-input input,
 .apprentice-edit-input select {
     width: 100%;
+
     height: 48px;
+
     border: none;
+
     outline: none;
+
     background-color: transparent;
+
     color: #29323a;
+
     font-family: 'Poppins', sans-serif;
+
     font-size: 13px;
 }
+
+
+/* Texto de ejemplo de los inputs */
 
 .apprentice-edit-input input::placeholder {
     color: #a3a9ad;
 }
 
+
+/* Cursor del select */
+
 .apprentice-edit-input select {
     cursor: pointer;
 }
 
+
+/* Estilo de los campos cuando están seleccionados */
+
 .apprentice-edit-input:focus-within {
     border-color: #198754;
+
     background-color: white;
+
     box-shadow:
         0 0 0 3px rgba(25, 135, 84, 0.08);
 }
 
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
 .apprentice-edit-buttons {
     display: flex;
+
     justify-content: flex-end;
+
     gap: 10px;
+
     margin-top: 32px;
+
     padding-top: 24px;
+
     border-top: 1px solid #edf0ee;
 }
+
+
+/* Estilos generales de los botones */
 
 .apprentice-edit-cancel,
 .apprentice-edit-save {
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 8px;
+
     padding: 10px 18px;
+
     border-radius: 9px;
+
     font-family: 'Poppins', sans-serif;
+
     font-size: 13px;
+
     font-weight: 500;
+
     cursor: pointer;
+
     transition: all 0.2s ease;
 }
 
+
+/* =========================================================
+   BOTÓN CANCELAR
+   ========================================================= */
+
 .apprentice-edit-cancel {
     border: 1px solid #d6dbd8;
+
     background-color: white;
+
     color: #69737a;
 }
 
+
+/* Efecto al pasar el mouse */
+
 .apprentice-edit-cancel:hover {
     background-color: #f3f6f4;
+
     border-color: #b9c2bd;
+
     color: #3f4944;
 }
 
+
+/* =========================================================
+   BOTÓN GUARDAR
+   ========================================================= */
+
 .apprentice-edit-save {
     border: none;
+
     background-color: #198754;
+
     color: white;
+
     box-shadow:
         0 4px 10px rgba(25, 135, 84, 0.18);
 }
 
+
+/* Efecto al pasar el mouse */
+
 .apprentice-edit-save:hover {
     background-color: #157347;
+
     transform: translateY(-1px);
+
     box-shadow:
         0 6px 14px rgba(25, 135, 84, 0.22);
 }

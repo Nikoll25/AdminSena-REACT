@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// iconos usados en las diferentes secciones
 import {
     FaArrowRight,
     FaBook,
@@ -17,16 +18,19 @@ import {
     FaChartLine
 } from "react-icons/fa";
 
+// imagenes de las ofertas academicas
 import oferta1 from "../../assets/oferta1.jpg";
 import oferta2 from "../../assets/oferta2.jpg";
 import oferta3 from "../../assets/oferta3.jpg";
 import oferta4 from "../../assets/oferta4.jpg";
 
+// estilos de la pagina principal
 import "./Home.css";
 
 
 function Home() {
 
+    // informacion que se muestra en las tarjetas de estadisticas
     const estadisticas = [
         {
             numero: "04",
@@ -51,6 +55,7 @@ function Home() {
     ];
 
 
+    // accesos que permiten entrar directamente a cada modulo del sistema
     const accesos = [
         {
             titulo: "Áreas",
@@ -91,6 +96,7 @@ function Home() {
     ];
 
 
+    // informacion de ejemplo que se muestra en las tarjetas de ofertas
     const ofertas = [
         {
             id: 1,
@@ -147,6 +153,7 @@ function Home() {
     ];
 
 
+    // lista de areas que aparecen en el filtro de ofertas
     const areas = [
         "Todas las áreas",
         "Tecnología",
@@ -156,6 +163,7 @@ function Home() {
     ];
 
 
+    // lista de centros que aparecen en el filtro de ofertas
     const centros = [
         "Todos los centros",
         "Centro de Gestión Administrativa",
@@ -168,11 +176,7 @@ function Home() {
     return (
         <main className="home-container">
 
-
-            {/* =================================================
-                HERO
-            ================================================= */}
-
+            {/* hero principal de la pagina */}
             <section className="home-hero">
 
                 <div className="home-hero-content">
@@ -193,6 +197,7 @@ function Home() {
                         académica del sistema.
                     </p>
 
+                    {/* boton que lleva al listado de ofertas */}
                     <Link
                         to="/offer/list"
                         className="home-hero-button"
@@ -204,6 +209,7 @@ function Home() {
                 </div>
 
 
+                {/* tarjeta decorativa que acompaña el hero */}
                 <div className="home-hero-decoration">
 
                     <div className="home-hero-circle circle-one"></div>
@@ -235,10 +241,7 @@ function Home() {
             </section>
 
 
-            {/* =================================================
-                ESTADÍSTICAS
-            ================================================= */}
-
+            {/* estadisticas generales del sistema */}
             <section className="home-statistics">
 
                 {estadisticas.map((item) => (
@@ -265,10 +268,7 @@ function Home() {
             </section>
 
 
-            {/* =================================================
-                ACCESOS
-            ================================================= */}
-
+            {/* accesos principales a los diferentes modulos */}
             <section className="home-section">
 
                 <div className="home-section-heading">
@@ -291,6 +291,7 @@ function Home() {
 
                 <div className="home-access-grid">
 
+                    {/* se recorren los accesos para crear una tarjeta por cada modulo */}
                     {accesos.map((item, index) => (
 
                         <Link
@@ -303,10 +304,12 @@ function Home() {
                             }
                         >
 
+                            {/* numero que identifica cada acceso */}
                             <div className="home-access-number">
                                 0{index + 1}
                             </div>
 
+                            {/* icono del modulo */}
                             <div className="home-access-icon">
                                 {item.icono}
                             </div>
@@ -323,6 +326,7 @@ function Home() {
 
                             </div>
 
+                            {/* flecha que indica que se puede entrar al modulo */}
                             <div className="home-access-arrow">
                                 <FaArrowRight />
                             </div>
@@ -336,10 +340,7 @@ function Home() {
             </section>
 
 
-            {/* =================================================
-                OFERTAS
-            ================================================= */}
-
+            {/* ofertas academicas disponibles */}
             <section className="home-offers-section">
 
                 <div className="home-offers-heading">
@@ -361,6 +362,7 @@ function Home() {
 
                     </div>
 
+                    {/* enlace para ver todas las ofertas */}
                     <Link
                         to="/offer/list"
                         className="home-see-all"
@@ -372,8 +374,7 @@ function Home() {
                 </div>
 
 
-                {/* FILTROS */}
-
+                {/* filtros para buscar ofertas por area o centro */}
                 <div className="home-filters">
 
                     <div className="home-filter">
@@ -391,6 +392,7 @@ function Home() {
                                     Seleccionar área
                                 </option>
 
+                                {/* se muestran las areas dentro del select */}
                                 {areas.map((area) => (
                                     <option
                                         key={area}
@@ -424,6 +426,7 @@ function Home() {
                                     Seleccionar centro
                                 </option>
 
+                                {/* se muestran los centros dentro del select */}
                                 {centros.map((centro) => (
                                     <option
                                         key={centro}
@@ -444,10 +447,10 @@ function Home() {
                 </div>
 
 
-                {/* OFERTAS */}
-
+                {/* tarjetas con la informacion de cada oferta */}
                 <div className="home-offers-grid">
 
+                    {/* se recorren las ofertas para mostrar cada una en una tarjeta */}
                     {ofertas.map((oferta) => (
 
                         <article
@@ -455,6 +458,7 @@ function Home() {
                             className="home-offer-card"
                         >
 
+                            {/* imagen y modalidad de la oferta */}
                             <div className="home-offer-image">
 
                                 <img
@@ -469,6 +473,7 @@ function Home() {
                             </div>
 
 
+                            {/* informacion principal de la oferta */}
                             <div className="home-offer-body">
 
                                 <span className="home-offer-area">
@@ -484,6 +489,7 @@ function Home() {
                                 </p>
 
 
+                                {/* fecha de inicio y cantidad de cupos */}
                                 <div className="home-offer-info">
 
                                     <div>
@@ -508,6 +514,7 @@ function Home() {
                                 </div>
 
 
+                                {/* centro donde se realiza la formacion */}
                                 <div className="home-offer-center">
 
                                     <FaMapMarkerAlt />
@@ -519,6 +526,7 @@ function Home() {
                                 </div>
 
 
+                                {/* boton para consultar los detalles de la oferta */}
                                 <Link
                                     to={`/offer/show/${oferta.id}`}
                                     className="home-offer-button"
@@ -538,10 +546,7 @@ function Home() {
             </section>
 
 
-            {/* =================================================
-                SOBRE ADMIN SENA
-            ================================================= */}
-
+            {/* informacion general sobre admin sena */}
             <section className="home-about">
 
                 <div className="home-about-main">
@@ -572,6 +577,7 @@ function Home() {
                 </div>
 
 
+                {/* beneficios principales del sistema */}
                 <div className="home-about-side">
 
                     <div className="home-about-side-item">
@@ -629,10 +635,7 @@ function Home() {
             </section>
 
 
-            {/* =================================================
-                FOOTER
-            ================================================= */}
-
+            {/* pie de pagina */}
             <footer className="home-footer">
 
                 <div>

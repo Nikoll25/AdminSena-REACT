@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+// importamos useNavigate que permite cambiar de página desde los botones del menú
 import { useNavigate } from "react-router-dom";
+
+// importamos iconos utilizados en las diferentes opciones del menú
 import {
     FaHome,
     FaCog,
@@ -16,12 +19,16 @@ import {
     FaLink,
 } from "react-icons/fa";
 
+//importamos  Estilos propios del componente Navbar
 import "./Navbar.css";
 
+// Componente que contiene el menú principal de navegación
 function Navbar() {
 
+    //useNavigate Permite navegar entre las diferentes rutas de la aplicación
     const navigate = useNavigate();
 
+    //creo estados para controlar la apertura de los menús desplegables
     const [administracionOpen, setAdministracionOpen] = useState(false);
     const [academicoOpen, setAcademicoOpen] = useState(false);
 
@@ -34,7 +41,7 @@ function Navbar() {
                 {/* INICIO */}
                 <li>
                     <button
-                        onClick={() => navigate("/inicio")}
+                        onClick={() => navigate("/")}
                         className="nav-button"
                     >
                         <FaHome />
@@ -43,7 +50,7 @@ function Navbar() {
                 </li>
 
 
-                {/* ADMINISTRACIÓN */}
+                {/* MENÚ DE ADMINISTRACIÓN */}
                 <li className="dropdown">
 
                     <button
@@ -54,6 +61,8 @@ function Navbar() {
                     >
                         <FaCog />
                         <span>Administración</span>
+
+                        {/* La flecha cambia de posición cuando se abre el menú */}
                         <FaChevronDown
                             className={
                                 administracionOpen
@@ -62,6 +71,8 @@ function Navbar() {
                             }
                         />
                     </button>
+
+                    {/* Opciones que aparecen al abrir Administración */}
                     {administracionOpen && (
                         <ul className="dropdown-menu">
 
@@ -104,7 +115,7 @@ function Navbar() {
                 </li>
 
 
-                {/* ACADÉMICO */}
+                {/* MENÚ ACADÉMICO */}
                 <li className="dropdown">
 
                     <button
@@ -115,6 +126,8 @@ function Navbar() {
                     >
                         <FaGraduationCap />
                         <span>Académico</span>
+
+                        {/* La flecha indica si el menú está abierto o cerrado */}
                         <FaChevronDown
                             className={
                                 academicoOpen
@@ -125,6 +138,7 @@ function Navbar() {
                     </button>
 
 
+                    {/* Opciones disponibles dentro del menú Académico */}
                     {academicoOpen && (
                         <ul className="dropdown-menu">
 
@@ -178,7 +192,7 @@ function Navbar() {
                 </li>
 
 
-                {/* OFERTAS */}
+                {/* ACCESO A LAS OFERTAS */}
                 <li>
                     <button
                         onClick={() => navigate("/offer/list")}
@@ -192,9 +206,10 @@ function Navbar() {
             </ul>
 
 
-            {/* PARTE DERECHA */}
+            {/* ELEMENTOS UBICADOS EN LA PARTE DERECHA */}
             <div className="navbar-right">
 
+                {/* Campo de búsqueda del menú */}
                 <form className="search-form">
                     <input
                         type="search"
@@ -207,7 +222,7 @@ function Navbar() {
                 </form>
 
 
-                {/* INICIAR SESIÓN */}
+                {/* BOTÓN PARA INICIAR SESIÓN */}
                 <button
                     onClick={() => navigate("/login")}
                     className="login-button"
@@ -222,4 +237,5 @@ function Navbar() {
     );
 }
 
+// Exportamos Navbar para poder utilizarlo en el Header
 export default Navbar;

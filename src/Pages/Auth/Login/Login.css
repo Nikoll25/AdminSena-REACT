@@ -1,0 +1,638 @@
+/* =========================================================
+   FUENTE
+   Importamos Poppins para darle un aspecto más moderno
+   y limpio al formulario.
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   PÁGINA PRINCIPAL
+
+   Ocupa toda la pantalla y centra la tarjeta del login.
+========================================================= */
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 40px 30px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f4f7f4;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================================
+   TARJETA PRINCIPAL
+
+   La tarjeta está dividida en dos columnas:
+   - Izquierda: información de AdminSena
+   - Derecha: formulario de login
+========================================================= */
+
+.login-card {
+    width: 100%;
+    max-width: 1050px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background-color: white;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   PANEL VERDE DE LA IZQUIERDA
+
+   Contiene el mensaje de bienvenida y las características
+   principales del sistema.
+========================================================= */
+
+.login-visual {
+    position: relative;
+
+    min-height: 600px;
+
+    padding: 55px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(31, 91, 38, 0.96),
+            rgba(88, 163, 68, 0.88)
+        );
+
+    color: white;
+}
+
+
+/* =========================================================
+   CÍRCULO DECORATIVO SUPERIOR
+
+   Se utiliza solamente como decoración del panel.
+========================================================= */
+
+.login-visual::before {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    right: -120px;
+    top: -120px;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   CÍRCULO DECORATIVO INFERIOR
+========================================================= */
+
+.login-visual::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    left: -110px;
+    bottom: -90px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   CONTENIDO DEL PANEL IZQUIERDO
+
+   El z-index permite que el contenido quede por encima
+   de los círculos decorativos.
+========================================================= */
+
+.login-visual-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   ICONO PRINCIPAL
+========================================================= */
+
+.login-sena-icon {
+    width: 75px;
+    height: 75px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    color: white;
+
+    font-size: 36px;
+}
+
+
+/* =========================================================
+   TÍTULO DEL PANEL IZQUIERDO
+========================================================= */
+
+.login-visual h1 {
+    margin: 0 0 20px;
+
+    color: white;
+
+    font-size: 43px;
+
+    line-height: 1.1;
+
+    font-weight: 500;
+}
+
+
+/* Parte resaltada del título */
+
+.login-visual h1 strong {
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN DEL PANEL
+========================================================= */
+
+.login-visual p {
+    max-width: 420px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CARACTERÍSTICAS DEL SISTEMA
+========================================================= */
+
+.login-features {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+/* Cada característica */
+
+.login-feature {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    color: white;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ICONO DE CADA CARACTERÍSTICA
+========================================================= */
+
+.login-feature-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: rgba(255, 255, 255, 0.14);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PARTE DERECHA DEL LOGIN
+
+   Contiene el formulario.
+========================================================= */
+
+.login-form {
+    min-height: 600px;
+
+    padding: 55px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: white;
+}
+
+
+/* =========================================================
+   TÍTULO DEL FORMULARIO
+========================================================= */
+
+.login-form-title {
+    margin-bottom: 35px;
+}
+
+
+/* Texto pequeño "PANEL ADMINISTRATIVO" */
+
+.login-form-title span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #5ea546;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* Título "Iniciar sesión" */
+
+.login-form-title h2 {
+    margin: 0 0 8px;
+
+    color: #26382b;
+
+    font-size: 30px;
+
+    font-weight: 800;
+}
+
+
+/* Texto debajo del título */
+
+.login-form-title p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CAMPOS DEL FORMULARIO
+========================================================= */
+
+.login-field {
+    margin-bottom: 22px;
+}
+
+
+/* Texto de cada campo */
+
+.login-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #344238;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CONTENEDOR DEL INPUT
+
+   Permite colocar el icono dentro del campo.
+========================================================= */
+
+.login-input-wrapper {
+    position: relative;
+}
+
+
+/* =========================================================
+   ICONOS DE CORREO Y CONTRASEÑA
+========================================================= */
+
+.login-input-icon {
+    position: absolute;
+
+    left: 17px;
+    top: 50%;
+
+    z-index: 2;
+
+    transform: translateY(-50%);
+
+    color: #5ea546;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.login-input-wrapper input {
+    width: 100%;
+    height: 55px;
+
+    padding: 0 15px 0 48px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e1e5e1;
+
+    border-radius: 14px;
+
+    outline: none;
+
+    background-color: #fafcf9;
+
+    color: #354339;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    transition: 0.2s ease;
+}
+
+
+/* Texto que aparece como ejemplo dentro del input */
+
+.login-input-wrapper input::placeholder {
+    color: #a1aaa4;
+}
+
+
+/* =========================================================
+   INPUT CUANDO EL USUARIO HACE CLIC
+
+   Cambiamos el borde y agregamos una pequeña sombra.
+========================================================= */
+
+.login-input-wrapper input:focus {
+    border-color: #5ea546;
+
+    background-color: white;
+
+    box-shadow:
+        0 0 0 4px rgba(94, 165, 70, 0.12);
+}
+
+
+/* =========================================================
+   RECORDAR Y RECUPERAR CONTRASEÑA
+========================================================= */
+
+.login-options {
+    margin: 2px 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+/* Checkbox "Recordarme" */
+
+.login-remember {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+/* Checkbox */
+
+.login-remember input {
+    width: 15px;
+    height: 15px;
+
+    accent-color: #5ea546;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   ENLACE DE RECUPERACIÓN
+========================================================= */
+
+.login-forgot {
+    color: #5ea546;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* Subrayado al pasar el mouse */
+
+.login-forgot:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   BOTÓN DE INICIAR SESIÓN
+
+   En realidad es un Link de React Router.
+   Por ahora solamente nos lleva a /inicio.
+========================================================= */
+
+.loginpage-button {
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #5ea546,
+        #438d35
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px rgba(76, 145, 55, 0.25);
+
+    transition: 0.25s ease;
+}
+
+
+/* =========================================================
+   EFECTO DEL BOTÓN AL PASAR EL MOUSE
+========================================================= */
+
+.loginpage-button:hover {
+    transform: translateY(-2px);
+
+    color: white;
+
+    box-shadow:
+        0 12px 25px rgba(76, 145, 55, 0.32);
+
+    background: linear-gradient(
+        135deg,
+        #559b3f,
+        #3e8332
+    );
+}
+
+
+/* =========================================================
+   REGISTRO
+========================================================= */
+
+.login-register {
+    margin-top: 28px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #eeeeee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/* Enlace para crear cuenta */
+
+.login-register a {
+    color: #4f963d;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+
+/* Efecto del enlace */
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MENSAJE DE SEGURIDAD
+========================================================= */
+
+.login-security {
+    margin-top: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    color: #999;
+
+    font-size: 9px;
+}
+
+
+/* Icono de seguridad */
+
+.login-security svg {
+    color: #5ea546;
+
+    font-size: 12px;
+}

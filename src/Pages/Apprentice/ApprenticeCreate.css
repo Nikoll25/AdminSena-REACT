@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Contenedor principal de la página */
 .apprentice-create-container {
     width: 100%;
     min-height: 100vh;
@@ -15,6 +16,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Tarjeta principal del formulario */
 .apprentice-create-card {
     width: 100%;
     max-width: 850px;
@@ -30,8 +32,12 @@
         0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-/* HEADER */
 
+/* =========================
+   HEADER
+   ========================= */
+
+/* Encabezado verde de la tarjeta */
 .apprentice-create-header {
     display: flex;
     align-items: center;
@@ -45,6 +51,7 @@
     color: white;
 }
 
+/* Contenedor del icono del encabezado */
 .apprentice-create-header-icon {
     width: 54px;
     height: 54px;
@@ -64,6 +71,7 @@
     font-size: 22px;
 }
 
+/* Título y descripción del encabezado */
 .apprentice-create-header h1 {
     margin: 0;
 
@@ -82,12 +90,17 @@
     color: rgba(255, 255, 255, 0.82);
 }
 
-/* BODY */
 
+/* =========================
+   BODY
+   ========================= */
+
+/* Contenido interno de la tarjeta */
 .apprentice-create-body {
     padding: 34px;
 }
 
+/* Título y descripción del formulario */
 .apprentice-create-title {
     margin-bottom: 28px;
 }
@@ -110,8 +123,12 @@
     font-size: 13px;
 }
 
-/* FORM */
 
+/* =========================
+   FORMULARIO
+   ========================= */
+
+/* Distribución de los campos en dos columnas */
 .apprentice-form-grid {
     display: grid;
 
@@ -120,12 +137,14 @@
     gap: 24px 20px;
 }
 
+/* Organización de cada campo del formulario */
 .apprentice-form-group {
     display: flex;
 
     flex-direction: column;
 }
 
+/* Estilos de las etiquetas de los campos */
 .apprentice-form-group label {
     display: flex;
 
@@ -142,14 +161,19 @@
     font-weight: 600;
 }
 
+/* Color y tamaño de los iconos de las etiquetas */
 .apprentice-form-group label svg {
     color: #198754;
 
     font-size: 13px;
 }
 
-/* INPUT */
 
+/* =========================
+   INPUTS Y SELECTS
+   ========================= */
+
+/* Contenedor de los campos de entrada */
 .apprentice-input-container {
     min-height: 50px;
 
@@ -168,6 +192,7 @@
     transition: all 0.2s ease;
 }
 
+/* Iconos dentro de los campos */
 .apprentice-input-container > svg {
     flex-shrink: 0;
 
@@ -178,6 +203,7 @@
     font-size: 14px;
 }
 
+/* Estilos generales de inputs y selects */
 .apprentice-input-container input,
 .apprentice-input-container select {
     width: 100%;
@@ -197,14 +223,17 @@
     font-size: 13px;
 }
 
+/* Texto de ejemplo de los inputs */
 .apprentice-input-container input::placeholder {
     color: #a3a9ad;
 }
 
+/* Cursor del elemento select */
 .apprentice-input-container select {
     cursor: pointer;
 }
 
+/* Estilo de los campos cuando están seleccionados */
 .apprentice-input-container:focus-within {
     border-color: #198754;
 
@@ -214,8 +243,12 @@
         0 0 0 3px rgba(25, 135, 84, 0.08);
 }
 
-/* BUTTONS */
 
+/* =========================
+   BOTONES
+   ========================= */
+
+/* Contenedor de los botones */
 .apprentice-create-buttons {
     display: flex;
 
@@ -230,6 +263,7 @@
     border-top: 1px solid #edf0ee;
 }
 
+/* Estilos generales de los botones */
 .apprentice-cancel-button,
 .apprentice-save-button {
     display: inline-flex;
@@ -255,8 +289,12 @@
     transition: all 0.2s ease;
 }
 
-/* CANCELAR */
 
+/* =========================
+   BOTÓN CANCELAR
+   ========================= */
+
+/* Estilo normal del botón cancelar */
 .apprentice-cancel-button {
     border: 1px solid #d6dbd8;
 
@@ -265,6 +303,7 @@
     color: #69737a;
 }
 
+/* Efecto al pasar el mouse sobre cancelar */
 .apprentice-cancel-button:hover {
     background-color: #f3f6f4;
 
@@ -273,8 +312,12 @@
     color: #3f4944;
 }
 
-/* GUARDAR */
 
+/* =========================
+   BOTÓN GUARDAR
+   ========================= */
+
+/* Estilo normal del botón guardar */
 .apprentice-save-button {
     border: none;
 
@@ -286,6 +329,7 @@
         0 4px 10px rgba(25, 135, 84, 0.18);
 }
 
+/* Efecto al pasar el mouse sobre guardar */
 .apprentice-save-button:hover {
     background-color: #157347;
 

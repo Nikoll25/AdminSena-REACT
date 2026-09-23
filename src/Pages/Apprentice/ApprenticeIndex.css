@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+
+/* =========================================
+   CONTENEDOR PRINCIPAL
+========================================= */
+
 .apprentice-index-container {
     width: 100%;
     min-height: 100vh;
@@ -13,7 +18,10 @@
     box-sizing: border-box;
 }
 
-/* HEADER */
+
+/* =========================================
+   HEADER
+========================================= */
 
 .apprentice-index-header {
     width: 100%;
@@ -47,7 +55,10 @@
     font-size: 13px;
 }
 
-/* ADD BUTTON */
+
+/* =========================================
+   BOTÓN AGREGAR
+========================================= */
 
 .apprentice-add-button {
     display: inline-flex;
@@ -91,7 +102,10 @@
     font-size: 14px;
 }
 
-/* TABLE CARD */
+
+/* =========================================
+   TARJETA DE LA TABLA
+========================================= */
 
 .apprentice-table-card {
     width: 100%;
@@ -116,7 +130,10 @@
     overflow-x: auto;
 }
 
-/* TABLE */
+
+/* =========================================
+   TABLA
+========================================= */
 
 .apprentice-table {
     width: 100%;
@@ -171,7 +188,10 @@
     border-bottom: none;
 }
 
-/* ID */
+
+/* =========================================
+   IDENTIFICADOR
+========================================= */
 
 .apprentice-id {
     display: inline-flex;
@@ -194,7 +214,10 @@
     font-weight: 600;
 }
 
-/* NAME */
+
+/* =========================================
+   NOMBRE DEL APRENDIZ
+========================================= */
 
 .apprentice-name {
     display: flex;
@@ -232,7 +255,10 @@
     white-space: nowrap;
 }
 
-/* EMAIL */
+
+/* =========================================
+   DATOS DEL APRENDIZ
+========================================= */
 
 .apprentice-email,
 .apprentice-phone,
@@ -266,7 +292,10 @@
     font-size: 12px;
 }
 
-/* ACTIONS */
+
+/* =========================================
+   ACCIONES
+========================================= */
 
 .apprentice-actions-header {
     text-align: center !important;
@@ -299,6 +328,11 @@
     transition: all 0.2s ease;
 }
 
+
+/* =========================================
+   BOTÓN VER
+========================================= */
+
 .apprentice-view {
     border: 1px solid #198754;
     color: #198754;
@@ -309,6 +343,11 @@
     color: white;
 }
 
+
+/* =========================================
+   BOTÓN EDITAR
+========================================= */
+
 .apprentice-edit {
     border: 1px solid #0dcaf0;
     color: #0aa2c0;
@@ -318,6 +357,11 @@
     background-color: #0dcaf0;
     color: white;
 }
+
+
+/* =========================================
+   BOTÓN ELIMINAR
+========================================= */
 
 .apprentice-delete {
     border: 1px solid #dc3545;

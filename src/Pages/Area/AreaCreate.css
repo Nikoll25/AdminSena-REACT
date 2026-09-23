@@ -1,8 +1,9 @@
-/* =========================
-   CONTENEDOR
-========================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* =========================================
+   CONTENEDOR PRINCIPAL
+========================================= */
 
 .area-create-container {
     width: 100%;
@@ -19,9 +20,9 @@
 }
 
 
-/* =========================
-   TARJETA
-========================= */
+/* =========================================
+   TARJETA PRINCIPAL
+========================================= */
 
 .area-create-card {
     width: 100%;
@@ -37,9 +38,9 @@
 }
 
 
-/* =========================
+/* =========================================
    ENCABEZADO
-========================= */
+========================================= */
 
 .area-create-header {
     display: flex;
@@ -55,7 +56,7 @@
 }
 
 
-/* ICONO */
+/* Icono del encabezado */
 
 .area-create-icon {
     width: 52px;
@@ -75,7 +76,7 @@
 }
 
 
-/* TITULO */
+/* Título del encabezado */
 
 .area-create-header h1 {
     margin: 0;
@@ -86,7 +87,7 @@
 }
 
 
-/* SUBTITULO */
+/* Subtítulo del encabezado */
 
 .area-create-header p {
     margin: 5px 0 0;
@@ -97,18 +98,18 @@
 }
 
 
-/* =========================
-   CUERPO
-========================= */
+/* =========================================
+   CUERPO DEL FORMULARIO
+========================================= */
 
 .area-create-body {
     padding: 32px;
 }
 
 
-/* =========================
-   TITULO DEL FORMULARIO
-========================= */
+/* =========================================
+   TÍTULO DEL FORMULARIO
+========================================= */
 
 .area-form-title {
     margin-bottom: 28px;
@@ -137,16 +138,16 @@
 }
 
 
-/* =========================
-   CAMPO
-========================= */
+/* =========================================
+   CAMPOS DEL FORMULARIO
+========================================= */
 
 .area-form-group {
     margin-bottom: 35px;
 }
 
 
-/* LABEL */
+/* Etiqueta del campo */
 
 .area-form-group label {
     display: block;
@@ -161,7 +162,7 @@
 }
 
 
-/* INPUT */
+/* Campo de entrada */
 
 .area-form-group input {
     width: 100%;
@@ -185,6 +186,9 @@
     transition: 0.2s;
 }
 
+
+/* Efectos del campo */
+
 .area-form-group input:hover {
     border-color: #adb5bd;
 }
@@ -200,7 +204,7 @@
 }
 
 
-/* TEXTO DE AYUDA */
+/* Texto de ayuda */
 
 .area-form-group small {
     display: block;
@@ -213,9 +217,9 @@
 }
 
 
-/* =========================
+/* =========================================
    BOTONES
-========================= */
+========================================= */
 
 .area-create-buttons {
     display: flex;
@@ -232,9 +236,9 @@
 }
 
 
-/* =========================
-   CANCELAR
-========================= */
+/* =========================================
+   BOTÓN CANCELAR
+========================================= */
 
 .area-cancel-button {
     display: inline-flex;
@@ -270,9 +274,9 @@
 }
 
 
-/* =========================
-   GUARDAR
-========================= */
+/* =========================================
+   BOTÓN GUARDAR
+========================================= */
 
 .area-save-button {
     display: inline-flex;
@@ -309,34 +313,4 @@
     border-color: #157347;
 
     box-shadow: 0 4px 8px rgba(25, 135, 84, 0.25);
-}
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 600px) {
-
-    .area-create-container {
-        padding: 30px 15px;
-    }
-
-    .area-create-header {
-        padding: 22px;
-    }
-
-    .area-create-body {
-        padding: 24px 20px;
-    }
-
-    .area-create-buttons {
-        flex-direction: column-reverse;
-    }
-
-    .area-cancel-button,
-    .area-save-button {
-        width: 100%;
-    }
-
 }
